@@ -1,0 +1,44 @@
+.landing-page-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.landing-page-icon-container {
+    height: auto;
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.landing-page-icon-container > span {
+    height: auto;
+    transition: all 0.2s ease-in-out;
+}
+
+.landing-page-icon-container > span:hover {
+    transform: scale(1.2);
+}
+
+@media (max-width: 968px) {
+    .landing-page-container {
+        height: 100%;
+        padding-top: 10rem;
+        padding-bottom: 5rem;
+    }
+
+    .landing-page-icon-container {
+        width: 90%;
+    }
+}
+
+@media (max-width:420px) {
+    .landing-page-container {
+        padding-top: 8rem;
+    }
+}

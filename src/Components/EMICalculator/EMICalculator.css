@@ -1,0 +1,233 @@
+.emi-calculator-page-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 0rem 6rem;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 2rem;
+    padding-top: 6rem;
+}
+
+.emi-calculator-page-container-head {
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.emi-calculator-page-container-content {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: -2rem;
+}
+
+.emi-calculator-page-container-content-container {
+    width: 50%;
+}
+
+.emi-calculator-page-container-content-container-inner-head {
+    font-size: 24px;
+    text-align: left;
+    margin-left: 3rem;
+    font-weight: 800;
+}
+
+.emi-calculator-page-container-content-container-inner-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    align-items: flex-start;
+}
+
+.emi-calculator-page-container-content-container-inner-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.emi-calculator-page-container-content-container-inner-content:nth-child(7) {
+    padding-top: 0.5rem;
+    border-top: 2px solid black;
+}
+
+.emi-calculator-page-container-content-container-inner-content-part1, 
+.emi-calculator-page-container-content-container-inner-content-part2 {
+    text-align: left;
+    width: 50%;
+    font-size: 18px;
+    margin-left: 3rem;
+}
+
+.emi-calculator-page-container-content-container-inner-content-part1 {
+    font-weight: 700;
+}
+
+.emi-calculator-page-container-button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 1rem;
+}
+
+.emi-calculator-button {
+    margin-right: 15%;
+    padding: 0.5rem 7rem;
+    background-color: rgb(206, 0, 0);
+    color: white;
+    font-size: 22px;
+    font-weight: 700;
+    border-radius: 20px;
+}
+
+.emi-calculator-page-container-content-container:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.emi-calculator-page1-head {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: left;
+}
+
+#rate-select {
+    width: 70%;
+    padding: 0.5rem 1rem;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+}
+
+.emi-calculator-page1-down-payment-head {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+.emi-calculator-page1-down-payment-slider {
+    width: 100%;
+    display: flex;
+}
+
+.emi-calculator-page1-down-payment-slider > input {
+    width: 80%;
+}
+
+.emi-calculator-page1-down-payment {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.emi-calculator-page1-down-payment > div {
+    font-size: 18px;
+}
+
+.emi-calculator-page1-down-payment > div:nth-child(1) {
+    font-weight: 700;
+}
+
+.emi-calculator-page1-rate-container {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+}
+
+.emi-calculator-page1-rate-container > div {
+    font-size: 18px;
+}
+
+.emi-calculator-page1-rate-container > div:nth-child(1) {
+    font-weight: 700;
+}
+
+.emi-calculator-page1-emi-container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-top: 1rem;
+}
+
+.emi-calculator-page1-emi-container-element-head {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-bottom: 0.5rem;
+}
+
+.emi-calculator-page1-emi-container-element-head > div {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.emi-calculator-page1-emi-container-element-inner {
+    width: 30%;
+    font-size: 16px;
+}
+
+.emi-calculator-page1-emi-container-element {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-top: 0.5rem;
+}
+
+@media (max-width: 968px) {
+    .emi-calculator-page-container {
+        padding: 6rem 2rem 5rem;
+        gap: 2rem;
+        height: 100%;
+    }
+
+    .emi-calculator-page-container-content {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .emi-calculator-page-container-content-container {
+        width: 100%;
+    }
+
+    .emi-calculator-page-container-content-container-inner-head {
+        margin-left: 0;
+    }
+}
+
+@media (max-width:420px) {
+    .emi-calculator-page-container {
+        padding: 6rem 1rem 5rem;
+    }
+
+    #rate-select {
+        width: 100%;
+    }
+
+    .emi-calculator-page1-down-payment-slider > input {
+        width: 100%;
+    }
+
+    .emi-calculator-page1-down-payment {
+        width: 100%;
+    }
+
+    .emi-calculator-page1-rate-container {
+        width: 100%;
+    }
+
+    .emi-calculator-page1-emi-container {
+        width: 100%;
+    }
+
+    .emi-calculator-page-container-content-container-inner-content-part1, .emi-calculator-page-container-content-container-inner-content-part2 {
+        margin-left: 1rem;
+    }
+}

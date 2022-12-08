@@ -1,0 +1,111 @@
+.accessories-page-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 0rem 5rem;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 8rem;
+}
+
+.accessories-page-container-head {
+    font-size: 22px;
+    font-weight: 900;
+}
+
+.accessories-page-container-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    padding: 0.5rem 0rem;
+}
+
+.accessories-page-container-content-head {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.accessories-page-container-content-container {
+    display: flex;
+    padding: 1.5rem 0rem;
+    width: 100%;
+    gap: 1rem;
+}
+
+.accessories-page-container-content-container-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 30px;
+}
+
+.accessories-page-container-content-container-inner.active {
+    background-color: rgb(186, 186, 186);
+}
+
+.accessories-page-container-content-container-inner-image:nth-child(0) {
+    width: 40%;
+}
+
+.accessories-page-container-content-container-inner-image:nth-child(1) {
+    width: 50%;
+}
+
+.accessories-page-container-content-container-inner-image > img {
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.accessories-page-container-content-container-inner-image > img:hover {
+    transform: scale(1.2);
+}
+
+.accessories-page-container-content-container-inner-price {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.accessories-page-button {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.accessories-page-button > span {
+    background-color: black;
+    padding: 0.5rem 3rem 1rem;
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 600;
+    border-radius: 30px;
+    margin-right: 3rem;
+}
+
+@media (max-width: 968px) {
+    .accessories-page-container {
+        padding: 6rem 2rem 5rem;
+        height: 100%;
+    }
+
+    .accessories-page-container-content-container {
+        flex-wrap: wrap;
+    }
+
+    .accessories-page-container-content-container-inner {
+        width: 40%;
+    }
+}
+
+@media (max-width:420px) {
+    .accessories-page-container-content-container-inner {
+        width: 35%;
+    }
+}

@@ -1,0 +1,45 @@
+.menu-bar-container {
+    display: none;
+    height: 100vh;
+    width: 300px;
+    background-color: black;
+    position: absolute;
+    padding-left: 3rem;
+}
+
+.menu-bar-header {
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem;
+}
+
+.menu-bar-header > img {
+    height: 100%;
+    width: auto;
+    cursor: pointer;
+}
+
+.menu-bar-contents {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: flex-start;
+    margin-top: 2rem;
+}
+
+.menu-bar-contents > div {
+    height: 40px;
+    display: flex;
+    gap: 1rem;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.menu-bar-contents > div > img {
+    height: 100%;
+    width: auto;
+}

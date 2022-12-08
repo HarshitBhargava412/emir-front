@@ -1,0 +1,59 @@
+.bank-page-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0rem 7rem;
+    gap: 4rem;
+    padding-top: 6rem;
+}
+
+.bank-page-container-head {
+    font-size: 22px;
+    font-weight: 800;
+    width: 100%;
+    text-align: left;
+}
+
+.bank-page-icon-container {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.bank-page-icon-container > span {
+    height: auto;
+    width: 10%;
+}
+
+.bank-page-icon-container > span > img {
+    width: 100%;
+    height: auto;
+    transition: all 0.2s ease-in-out;
+}
+
+.bank-page-icon-container > span > img:hover {
+    transform: scale(1.2);
+}
+
+@media (max-width: 968px) {
+    .bank-page-container {
+        padding: 0 2rem;
+        gap: 2rem;
+    }
+
+    .bank-page-icon-container > span {
+        width: 15%;
+    }
+}
+
+@media (max-width:420px) {
+    .bank-page-container {
+        padding: 0 1rem;
+    }
+}

@@ -1,0 +1,60 @@
+.modal-container {
+    display: none;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.49);
+}
+
+.login.modal {
+    width: auto;
+    height: auto;
+    padding: 3rem;
+    margin-top: 3rem;
+    background-color: lightgrey;
+    text-align: center;
+    margin-left: 40%;
+    border-radius: 10%;
+}
+
+.login.modal > form > input::placeholder {
+    color: white;
+}
+
+textarea {
+    width: 100%;
+	background: rgba(0, 0, 0, 0.3);
+	border: none;
+	outline: none;
+	padding: 10px;
+	font-size: 13px;
+	color: #fff;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	border-radius: 4px;
+	box-shadow: inset 0 -5px 45px rgba(100, 100, 100, 0.2), 0 1px 1px rgba(255, 255, 255, 0.2);
+	-webkit-transition: box-shadow .5s ease;
+	-moz-transition: box-shadow .5s ease;
+	-o-transition: box-shadow .5s ease;
+	-ms-transition: box-shadow .5s ease;
+	transition: box-shadow .5s ease;
+}
+
+textarea::placeholder {
+    color: white;
+}
+
+@media (max-width: 968px) {
+    .login.modal {
+        margin-left: 25%;
+    }
+}
+
+@media (max-width:420px) {
+    .login.modal {
+        padding: 2rem;
+        margin-left: 5px;
+    }
+}
